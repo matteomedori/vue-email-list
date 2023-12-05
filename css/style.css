@@ -9,7 +9,8 @@
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: #eef4e4;
+  color: #bb9a8e;
 }
 
 .container {
@@ -21,8 +22,32 @@ body {
 h1 {
   margin: 30px 0;
   font-size: 45px;
+  color: #937282;
 }
 
 ul {
   list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
+}
+
+ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #cdc2a4;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+li::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-image: url(/img/mail_img.png);
+  background-size: contain;
 }
