@@ -13,7 +13,14 @@
     <!-- /Axios -->
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app" v-cloak>
+      <div class="container">
+        <h1>Generating 10 random Emails</h1>
+        <ul>
+          <li v-for="email in emails">{{email}}</li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Vue JS -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
