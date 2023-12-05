@@ -8,6 +8,7 @@ createApp({
       apiUrl: "https://flynn.boolean.careers/exercises/api/random/mail",
       message: "Hello Vue!",
       emails: [],
+      completed: false,
     };
   },
   methods: {},
@@ -16,6 +17,9 @@ createApp({
       axios.get(this.apiUrl).then((response) => {
         console.log(response.data.response);
         this.emails.push(response.data.response);
+        if (this.emails.length === 10) {
+          this.completed = true;
+        }
       });
     }
   },

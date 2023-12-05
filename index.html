@@ -17,7 +17,7 @@
       <div class="container">
         <h1>Generating 10 random Emails</h1>
         <ul>
-          <li v-for="email in emails">{{email}}</li>
+          <li v-for="email in emails" v-if="completed">{{email}}</li>
         </ul>
       </div>
     </div>
